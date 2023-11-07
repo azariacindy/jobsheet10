@@ -10,10 +10,8 @@ public class cinema07 {
        audience[2][1] = "Farhan";
        audience[3][0] = "Gisel";
 
-       System.out.println("Audience on row 3 : ");
-
-        for (String i : audience[2]) {
-            System.out.println(i);
+        for (int i = 0; i < audience.length; i++) {
+            System.out.println("Audience on row " + (i + 1) + ": " + String.join(", ", audience[i]));
         }
 
     }
