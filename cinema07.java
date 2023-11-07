@@ -11,10 +11,10 @@ public class cinema07 {
        audience[3][0] = "Gisel";
 
        System.out.println(audience.length);
-
-        for (int i = 0; i < audience.length; i++) {
-            System.out.println("Length of row " + (i + 1) + " : " + audience[1].length);
-        } 
+        
+        for (String[] audienceRow : audience) {
+            System.out.println("Length row : " + audienceRow.length);
+        }
 
     }
 }
